@@ -52,6 +52,7 @@ public class SimpleServer {
         @Override
         public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
             System.out.println("channelRegistered from " + handlerName);
+            ctx.fireChannelRegistered();
         }
 
         @Override
